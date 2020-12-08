@@ -1,0 +1,18 @@
+Source: golang-gopkg-fsnotify.v1
+Priority: optional
+Maintainer: Yiannis Giannelos <jgiannelos@wikimedia.org>
+Uploaders: Yiannis Giannelos <jgiannelos@wikimedia.org>
+Build-Depends: debhelper (>= 11),
+               dh-golang,
+               golang-any,
+               golang-golang-x-sys-dev
+Standards-Version: 4.2.1
+Homepage: https://github.com/fsnotify/fsnotify
+XS-Go-Import-Path: gopkg.in/fsnotify.v1
+Testsuite: autopkgtest-pkg-go
+
+Package: golang-gopkg-fsnotify.v1-dev
+Architecture: all
+Depends: ${misc:Depends},
+         golang-golang-x-sys-dev
+Description: Cross-platform file system notifications for Go.
